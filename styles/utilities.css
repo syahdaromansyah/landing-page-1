@@ -10,6 +10,7 @@
 /** Utilities Style */
 .container {
   max-width: 1140px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -21,12 +22,24 @@
   justify-content: space-between;
 }
 
+.flex-jc-se {
+  justify-content: space-evenly;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
 .flex-jc-c {
   justify-content: center;
 }
 
 .flex-ais-c {
   align-items: center;
+}
+
+.flex-ais-s {
+  align-items: stretch;
 }
 
 .flex-d-c {
