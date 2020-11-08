@@ -29,8 +29,9 @@ a {
 
 header {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-    url(../images/bg-hd.jpg) center bottom no-repeat;
+    url(../images/bg-hd.jpg) center no-repeat;
   background-size: cover;
+  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -52,4 +53,27 @@ a.logo {
   display: inline-block;
   font-size: 1.8rem;
   padding: 0 1em;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.nav-right ul.flex li > a:hover {
+  text-shadow: 0 0 0.1em rgb(238, 238, 238);
+}
+
+.banner-hd {
+  /* background-color: blueviolet; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-hd h1 {
+  font-size: 8rem;
+}
+
+.banner-hd p {
+  font-size: 1.4rem;
+  padding-bottom: 0.6em;
 }

@@ -21,6 +21,32 @@
   justify-content: space-between;
 }
 
+.flex-jc-c {
+  justify-content: center;
+}
+
 .flex-ais-c {
   align-items: center;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main-btn {
+  background-color: #333;
+  border-radius: 0.2em;
+  color: #eee;
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 0.8em 1.2em;
+  transition: background-color 0.2s;
+}
+
+.main-btn:hover {
+  background-color: #000000;
 }
