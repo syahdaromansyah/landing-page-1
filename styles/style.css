@@ -1,3 +1,4 @@
+/** Universal Style */
 *,
 *::before,
 *::after {
@@ -26,7 +27,7 @@ ul {
 a {
   text-decoration: none;
 }
-
+/** Header Section */
 header {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
     url(../images/bg-hd.jpg) center no-repeat;
@@ -80,6 +81,7 @@ a.logo {
   padding-bottom: 0.6em;
 }
 
+/** Main Section */
 main {
   margin: 8em 0;
 }
@@ -102,6 +104,7 @@ article p {
   font-weight: 300;
 }
 
+/** Footer Section */
 footer {
   background-color: #333;
   padding: 1.8em 0;
