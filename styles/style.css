@@ -51,6 +51,14 @@ a.logo {
   font-weight: 700;
 }
 
+.nav-right > i {
+  display: none;
+}
+
+.nav-right ul.flex li:first-child {
+  display: none;
+}
+
 .nav-right ul.flex li > a {
   color: var(--secondary-color);
   display: inline-block;
@@ -64,10 +72,11 @@ a.logo {
 }
 
 .banner-hd {
+  color: var(--main-color);
   position: absolute;
   top: 0;
   left: 0;
-  height: 95%;
+  height: 100%;
   width: 100%;
   z-index: 1;
 }
@@ -78,7 +87,7 @@ a.logo {
 
 .banner-hd p {
   font-size: 1.4rem;
-  padding-bottom: 0.6em;
+  margin-bottom: 1.2em;
 }
 
 /** Main Section */
@@ -88,8 +97,10 @@ main {
 
 article {
   background-color: #fafafa;
+  color: var(--main-color);
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
   border-radius: 0.8em;
+  flex: 1;
   padding: 1.6em 2.4em;
   margin: 0 2em;
 }
@@ -114,4 +125,75 @@ footer p {
   color: #eee;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/** Media Queries */
+@media screen and (max-width: 420px) {
+  /** Header */
+  a.logo {
+    font-size: 2.4rem;
+  }
+
+  .nav-right > i {
+    color: var(--secondary-color);
+    display: inline-block;
+    font-size: 2.4rem;
+  }
+
+  .nav-right ul.flex {
+    /* display: none; */
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12em 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    height: 100%;
+    width: 60%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 10000;
+  }
+
+  .active-m-nav {
+    transform: translateX(0) !important;
+  }
+
+  .nav-right ul.flex li:first-child {
+    display: block;
+    position: absolute;
+    top: 4em;
+  }
+
+  .nav-right ul.flex li > a {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .banner-hd h1 {
+    font-size: 4rem;
+  }
+
+  .banner-hd p {
+    font-size: 1.2rem;
+  }
+
+  /** Main */
+  main > .container {
+    flex-direction: column;
+  }
+
+  article {
+    margin: 1.4em 0;
+  }
+
+  article h2 {
+    font-size: 2.4rem;
+  }
+
+  article p {
+    font-size: 1.125rem;
+  }
 }
