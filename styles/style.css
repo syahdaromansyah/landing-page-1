@@ -17,7 +17,7 @@ body {
 
 body,
 a {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 ul {
@@ -83,11 +83,16 @@ a.logo {
 
 .banner-hd h1 {
   font-size: 8rem;
+  margin-bottom: 0.15em;
 }
 
 .banner-hd p {
-  font-size: 1.4rem;
-  margin-bottom: 1.2em;
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+}
+
+a.learn-more-btn {
+  font-size: 1.6rem;
 }
 
 /** Main Section */
@@ -107,11 +112,12 @@ article {
 
 article h2 {
   font-size: 3.6rem;
-  margin: 0.2em 0;
+  margin: 0.2em 0 0.4em;
 }
 
 article p {
-  font-size: 1.25rem;
+  line-height: 1.5;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 
@@ -123,7 +129,7 @@ footer {
 
 footer p {
   color: #eee;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -173,11 +179,11 @@ footer p {
   }
 
   .banner-hd h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .banner-hd p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   /** Main */
@@ -191,9 +197,5 @@ footer p {
 
   article h2 {
     font-size: 2.4rem;
-  }
-
-  article p {
-    font-size: 1.125rem;
   }
 }
